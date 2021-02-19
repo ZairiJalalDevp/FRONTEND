@@ -63,10 +63,7 @@
             <div class="mb-3">
               <label  class="form-label">La catégorie::</label>
               <input type="text" [(ngModel)]="addNews.categorie" class="form-control" placeholder="categorie">
-            </div>
-          
-          {{addNews | json}}
-          
+            </div>          
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="PersisteNews()">Ajouter</button>
@@ -79,7 +76,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal add</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Modal edit</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -95,10 +92,7 @@
             <div class="mb-3">
               <label  class="form-label">La catégorie::</label>
               <input type="text" [(ngModel)]="updateNews.categorie" class="form-control" placeholder="categorie">
-            </div>
-          
-          {{updateNews | json}}
-          
+            </div>          
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-warning" data-bs-dismiss="modal" (click)="ForceEditNews()">Modifier</button>
